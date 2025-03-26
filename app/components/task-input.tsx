@@ -41,6 +41,7 @@ export default function TaskInput() {
         try {
           weatherData = await fetchWeatherForLocation(location)
         } catch (error) {
+          console.log(error)
           toast(
          "Could not fetch weather for the specified location"
           )

@@ -2,8 +2,6 @@ import type { WeatherData } from "../types"
 
 // This is a mock API function that simulates fetching weather data
 export async function fetchWeatherForLocation(location: string): Promise<WeatherData> {
-  // In a real app, this would be an API call to a weather service
-  // For demo purposes, we'll simulate an API call with a delay
   await new Promise((resolve) => setTimeout(resolve, 1000))
 
   // Generate random weather data based on the location

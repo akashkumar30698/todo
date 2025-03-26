@@ -47,6 +47,7 @@ export default function LoginPage() {
         )
       }
     } catch (error) {
+      console.log(error)
       toast(
          "An error occurred during login",
       )
